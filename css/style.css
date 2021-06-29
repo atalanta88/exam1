@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background: url(/exam1/images/aerial-view-earth-exploration-flying-60132.jpg)
+    no-repeat center fixed;
+  background-size: cover;
+  padding-bottom: 40px;
+  font-family: mentone, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  font-variant: normal;
+  line-height: 23px;
+  letter-spacing: 1px;
+}
+
+header {
+  display: grid;
+}
+
+/*logo*/
+
+#logo {
+  display: flex;
+  padding: 5px 0px;
+  margin: 0% auto;
+}
+
+/*navigation*/
+
+.topnav {
+  margin: 0px auto;
+}
+
+.topnav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.topnav ul li a {
+  color: #d9af62;
+  text-decoration: none;
+  padding: 0px 15px 0px;
+  font-family: omnium, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+
+.topnav a:hover {
+  border-bottom: 1px solid #d9af62;
+}
+
+.topnav a.active {
+  border-bottom: 1px solid #d9af62;
+}
+
+/*main-content*/
+
+main {
+  min-height: 100%;
+}
+
+.introduction {
+  text-align: center;
+  margin-top: 5%;
+  margin: 0 auto;
+  max-width: 100%;
+  line-height: 1.5;
+}
+
+.introduction h1 {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 100px 0px;
+  font-family: omnium, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  letter-spacing: 3px;
+}
+
+.button-wrapper {
+  padding: 10px;
+  margin-top: 15%;
+  display: block;
+  text-align: center;
+}
+
+.button {
+  border: none;
+  color: #ffffff;
+  background-color: rgb(179, 38, 38);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.349);
+  display: inline-block;
+  padding: 30px;
+  width: auto;
+  text-decoration: none;
+  font-family: omnium, sans-serif;
+  letter-spacing: 3px;
+  font-size: 25px;
+}
+
+.cta-button:hover {
+  background-color: rgb(202, 32, 32);
+}
+
+/*footer*/
+
+footer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+}
+
+.column h2 {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  color: #d9af62;
+  font-family: mentone, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.row {
+  margin: 0 -5px;
+  padding-top: 80px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card1 {
+  height: 200px;
+  text-align: center;
+  background-color: #1b2733;
+}
+
+.card1 i {
+  color: #d9af62;
+}
+
+.card1 p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 2px;
+}
+
+.card2 {
+  height: 200px;
+  background-color: #1b2733;
+  color: rgb(255, 255, 255);
+  padding: 0px 20px;
+}
+
+.card2 h2 {
+  text-align: center;
+}
+
+.card3 {
+  height: 200px;
+  text-align: center;
+  background-color: #1b2733;
+}
+
+/*footer-social media*/
+
+.fa {
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  padding-top: 30px;
+}
+
+.fa a {
+  padding: 10px;
+}
+
+/*footer-copyright-bottom*/
+
+footer .footer-bottom {
+  background: #1a1f22;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 1px;
+  height: 45px;
+  padding-bottom: 0px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 650px) {
+  /*top navigation*/
+
+  .topnav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1b2733;
+  }
+
+  .topnav ul {
+    padding-inline-start: 3px;
+  }
+
+  .topnav ul li a {
+    color: #d9af62;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 15px;
+    letter-spacing: 3px;
+  }
+
+  #logo img {
+    width: 50px;
+  }
+
+  /*introduction heading and paragraph*/
+
+  .introduction h1 {
+    color: #ffffff;
+    padding: 40px 0px;
+    font-size: 30px;
+  }
+
+  .button {
+    font-size: 25px;
+  }
+
+  /*footer*/
+
+  .column {
+    width: 100%;
+    display: block;
+  }
+
+  footer .footer-bottom {
+    height: 95px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  /*top navigation*/
+
+  .topnav ul li a {
+    font-size: 14.5px;
+  }
+
+  /*introduction heading and paragraph*/
+
+  .introduction h1 {
+    font-size: 24px;
+  }
+
+  .button {
+    font-size: 19px;
+    padding: 15px;
+  }
+}
